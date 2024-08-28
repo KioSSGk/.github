@@ -1,19 +1,49 @@
-- uses: Platane/snk@v3
-  with:
-    # github user name to read the contribution graph from (**required**)
-    # using action context var `github.repository_owner` or specified user
-    github_user_name: ${{ github.repository_owner }}
+name: Generate Snake Animation
 
-    # list of files to generate.
-    # one file per line. Each output can be customized with options as query string.
-    #
-    #  supported options:
-    #  - palette:     A preset of color, one of [github, github-dark, github-light]
-    #  - color_snake: Color of the snake
-    #  - color_dots:  Coma separated list of dots color.
-    #                 The first one is 0 contribution, then it goes from the low contribution to the highest.
-    #                 Exactly 5 colors are expected.
-    outputs: |
-      dist/github-snake.svg
-      dist/github-snake-dark.svg?palette=github-dark
-      dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+on:
+  # 트리거 설정 - 이 예시에서는 매일 새벽 12시에 실행됩니다.
+  schedule:
+    - cron: "0 0 * * *"
+
+  # 리포지토리에 푸시 또는 PR이 있을 때 실행할 수 있습니다.
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Generate Snake Animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: Kiossgk  # 오가니제이션 이름을 여기에 입력
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9 
+
+      - name: Check if snake ate all green dots
+        run: |
+          # 예시: 파일 내에서 특정 조건을 체크하는 스크립트를 작성합니다.
+          # 실제로는 기여도 상태를 분석하여 체크합니다.
+          if grep -q "All Green Dots Eaten" dist/github-snake.svg; then
+            echo "Snake ate all green dots"
+            exit 0
+          else
+            echo "Snake did not eat all green dots"
+            exit 1
+
+      - name: Trigger workflow again if needed
+        if: failure()
+        run: |
+          curl -X POST \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/ORGANIZATION_NAME/REPO_NAME/actions/workflows/snake.yml/dispatches \
+          -d '{"ref":"main"}'
