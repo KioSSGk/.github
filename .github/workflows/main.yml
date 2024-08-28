@@ -30,13 +30,13 @@ jobs:
 
       - name: Check if snake ate all green dots
         run: |
-          if grep -q "All Green Dots Eaten" dist/github-snake.svg; then
-            echo "Snake ate all green dots"
-            exit 0
+          if grep -q 'fill="#4c1"' dist/github-snake.svg; then
+          echo "Snake did not eat all green dots"
+          exit 1
           else
-            echo "Snake did not eat all green dots"
-            exit 1
-          fi  # Ensure this closing statement is present
+          echo "Snake ate all green dots"
+          exit 0
+          fi
 
       - name: Trigger workflow again if needed
         if: failure()
