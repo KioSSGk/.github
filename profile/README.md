@@ -1,5 +1,15 @@
 ## Hi there 👋
 
+## GitHub Snake Animation 🐍
+
+이 애니메이션은 저의 GitHub 기여도를 시각적으로 표현한 것입니다. 뱀이 기여도 그래프를 따라다니며 기여도 점들을 먹습니다!
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dist/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="dist/github-snake.svg" />
+  <img alt="github-snake" src="dist/github-snake.svg" />
+</picture>
+
 <!--
 
 **Here are some ideas to get you started:**
@@ -10,10 +20,3 @@
 🍿 Fun facts - what does your team eat for breakfast?
 🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 -->
-
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
-  <img alt="github-snake" src="github-snake.svg" />
-</picture>
