@@ -22,7 +22,7 @@ jobs:
       - name: Generate Snake Animation
         uses: Platane/snk@v3
         with:
-          github_user_name: Kiossgk  # 오가니제이션 이름을 여기에 입력
+          github_user_name: leedonguk0809  # 오가니제이션 이름을 여기에 입력
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
