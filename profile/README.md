@@ -1,5 +1,6 @@
 # 다들 안녕 👋
-<img src="https://capsule-render.vercel.app/api?type=waving&color=D2B48C&height=200&section=header&text=NFC%20%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20%EB%82%B4%20%EC%86%90%EC%95%88%EC%97%90%20%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC&fontSize=35&fontAlignY=40" />
+<img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&size=40&pause=1000&color=D2B48C&background=2C2F33&center=true&vCenter=true&width=500&lines=NFC+%EB%A5%BC+%ED%99%9C%EC%9A%A9%ED%95%9C+%EB%82%B4+%EC%86%90%EC%95%88%EC%97%90+%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC" alt="I am Venom." />
+
 
 
 
