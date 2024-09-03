@@ -39,8 +39,8 @@
   <summary>🔷 나의 깃허브</summary>
 
   <p>
-    - [GitHub Profile](https://github.com/LeeDongUk)
-    - [My Repositories](https://github.com/username?tab=kiossgk)
+    - [GitHub Profile](https://github.com/leedonguk0809)
+    - [My Repositories](https://github.com/leedonguk0809?tab=repositories)
   </p>
 
 </details>
