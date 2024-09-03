@@ -2,8 +2,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0f0c29,302b63,24243e&height=150&section=header&text=NFC%20%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20%EB%82%B4%20%EC%86%90%EC%95%88%EC%97%90%20%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC&fontSize=30&fontAlignY=35" />
 
 
-
-
 ## 프로젝트 설명: 키오스크
 
 **NFC를 활용한 내 손안에 키오스크**
