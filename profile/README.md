@@ -40,7 +40,7 @@
 
   <p>
     - [GitHub Profile](https://github.com/leedonguk0809)
-    - [My Repositories](https://github.com/leedonguk0809?tab=repositories)
+    - [KioSSGk Organization Repository](https://github.com/KioSSGk/kiossgk)
   </p>
 
 </details>
