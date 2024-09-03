@@ -1,5 +1,6 @@
 # 다들 안녕 👋
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FF69B4&height=150&section=header&text=NFC%20%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20%EB%82%B4%20%EC%86%90%EC%95%88%EC%97%90%20%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC&fontSize=30&fontAlignY=35" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00FFFF&height=150&section=header&text=NFC%20%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20%EB%82%B4%20%EC%86%90%EC%95%88%EC%97%90%20%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC&fontSize=30&fontAlignY=35" />
+
 
 
 
