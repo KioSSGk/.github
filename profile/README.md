@@ -72,7 +72,8 @@
   <summary>🔷 나의 깃허브</summary>
 
   <p>
-    - [GitHub Profile](https://github.com/leedonguk0809)
+    - [이동욱 Profile](https://github.com/leedonguk0809)
+    - [한영욱 Profile](https://github.com/10wook)
     - [KioSSGk Organization Repository](https://github.com/KioSSGk/kiossgk)
   </p>
 
